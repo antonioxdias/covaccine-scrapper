@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/antonioxdias/covaccine-scrapper/issues"
   },
-  "homepage": "https://github.com/antonioxdias/covaccine-scrapper#readme"
+  "homepage": "https://github.com/antonioxdias/covaccine-scrapper#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.6.2"
+  }
 }
