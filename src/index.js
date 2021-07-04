@@ -15,6 +15,7 @@ setInterval(async () => {
           .split('<h3 class="has-text-color" style="color:#026437"><strong>')[1]
           .split('</strong></h3>')[0]
     )
+    .catch((e) => console.log(e))
 
   if (message !== currentMessage) {
     console.log('New message detected: ', message)
