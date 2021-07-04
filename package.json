@@ -1,0 +1,19 @@
+{
+  "name": "covaccine-scrapper",
+  "version": "1.0.0",
+  "description": "scrape vaccine schedule page for under 30 announcement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioxdias/covaccine-scrapper.git"
+  },
+  "author": "antonioxdias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonioxdias/covaccine-scrapper/issues"
+  },
+  "homepage": "https://github.com/antonioxdias/covaccine-scrapper#readme"
+}
