@@ -4,7 +4,8 @@ const nodemailer = require('nodemailer')
 
 const url = 'https://covid19.min-saude.pt/pedido-de-agendamento/'
 const cooldown = 10000 // 10 seconds
-let currentMessage = 'Tem 30 ou mais anos e ainda não foi vacinado(a)?'
+const currentAge = 27
+let currentMessage = `Tem ${currentAge} ou mais anos e ainda não foi vacinado(a)?`
 
 setInterval(async () => {
   const message = await axios
@@ -15,7 +16,11 @@ setInterval(async () => {
           .split('<h3 class="has-text-color" style="color:#026437"><strong>')[1]
           .split('</strong></h3>')[0]
     )
-    .catch((e) => console.log(e))
+    .catch((e) => console.log(e.request.data))
+
+  if (!message) {
+    return
+  }
 
   if (message !== currentMessage) {
     console.log('New message detected: ', message)
